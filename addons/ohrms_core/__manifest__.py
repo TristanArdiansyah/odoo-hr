@@ -54,7 +54,10 @@
         'hrms_dashboard',
         'hr_reminder',
         'employee_orientation',
-        'oh_appraisal'
+        'oh_appraisal',
+        'hr_organizational_chart',
+        'base_account_budget',
+        'base_accounting_kit'
     ],
     "external_dependencies": {"python": ["pandas"]},
     'data': [
