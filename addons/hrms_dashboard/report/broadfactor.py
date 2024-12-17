@@ -4,8 +4,6 @@ from datetime import date, datetime
 from odoo import tools
 from odoo import api, fields, models
 
-import pandas
-
 
 class EmployeeBroadFactor(models.Model):
     _name = "hr.employee.broad.factor"
