@@ -26,6 +26,11 @@ from odoo import models, fields, api
 class ResConfigSettings(models.TransientModel):
     _inherit = 'res.config.settings'
 
+    module_hr_employee_shift = fields.Boolean(
+        string='Enable Employee Shift Module',
+        help='Enable or disable the employee shift functionality'
+    )
+
     order_menu = fields.Boolean(string='Enable Order Menu')
 
     use_anglo_saxon_accounting = fields.Boolean(string="Use Anglo-Saxon accounting", readonly=False,
