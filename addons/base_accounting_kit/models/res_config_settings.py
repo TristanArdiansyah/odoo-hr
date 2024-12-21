@@ -20,13 +20,16 @@
 #
 #############################################################################
 
-from odoo import models, fields
+from odoo import models, fields, api
+
 
 class ResConfigSettings(models.TransientModel):
     _inherit = 'res.config.settings'
 
     order_menu = fields.Boolean(string='Enable Order Menu')
 
+    use_anglo_saxon_accounting = fields.Boolean(string="Use Anglo-Saxon accounting", readonly=False,
+                                                related='company_id.anglo_saxon_accounting')
 
     @api.model
     def get_values(self):
