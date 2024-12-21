@@ -66,7 +66,8 @@
         'website_customer_note',
         'website_sale_auto_backend',
         'fl_birthday_wish',
-        'ent_history_employee'
+        'ent_history_employee',
+        'hr_vacation_mngmt'
 
     ],
     "external_dependencies": {"python": ["pandas"]},
