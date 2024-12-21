@@ -30,6 +30,11 @@ class ResConfigSettings(models.TransientModel):
         string='Enable Employee Shift Module',
         help='Enable or disable the employee shift functionality'
     )
+    
+    test_module_hr_employee_shift = fields.Boolean(
+        string='Enable Test Employee Shift',
+        help='Enable or disable the test employee shift functionality'
+    )
 
     order_menu = fields.Boolean(string='Enable Order Menu')
 
