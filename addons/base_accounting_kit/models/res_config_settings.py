@@ -26,33 +26,7 @@ from odoo import models, fields, api
 class ResConfigSettings(models.TransientModel):
     _inherit = 'res.config.settings'
 
-    module_hr_employee_shift = fields.Boolean(
-        string='Enable Employee Shift Module',
-        help='Enable or disable the employee shift functionality'
-    )
-
-    test_module_hr_employee_shift = fields.Boolean(
-        string='Enable Test Employee Shift',
-        help='Enable or disable the test employee shift functionality'
-    )
-
-    module_hr_vacation_mngmt = fields.Boolean(
-        string='Enable Vacation Management',
-        help='Enable or disable the vacation management module'
-    )
-
-
-    test_module_hr_vacation_mngmt = fields.Boolean(
-        string='Enable Test Vacation Management',
-        help='Enable or disable the test vacation management module'
-    )
-
-    customer_credit_limit = fields.Float(
-        string='Customer Credit Limit',
-        help='Set the default credit limit for customers'
-    )
-
-    order_menu = fields.Boolean(string='Enable Order Menu')
+    customer_credit_limit = fields.Boolean(string="Customer Credit Limit")
 
     use_anglo_saxon_accounting = fields.Boolean(string="Use Anglo-Saxon accounting", readonly=False,
                                                 related='company_id.anglo_saxon_accounting')
