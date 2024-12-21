@@ -41,6 +41,12 @@ class ResConfigSettings(models.TransientModel):
         help='Enable or disable the vacation management module'
     )
 
+
+    test_module_hr_vacation_mngmt = fields.Boolean(
+        string='Enable Test Vacation Management',
+        help='Enable or disable the test vacation management module'
+    )
+
     order_menu = fields.Boolean(string='Enable Order Menu')
 
     use_anglo_saxon_accounting = fields.Boolean(string="Use Anglo-Saxon accounting", readonly=False,
