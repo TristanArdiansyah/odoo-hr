@@ -47,6 +47,11 @@ class ResConfigSettings(models.TransientModel):
         help='Enable or disable the test vacation management module'
     )
 
+    customer_credit_limit = fields.Float(
+        string='Customer Credit Limit',
+        help='Set the default credit limit for customers'
+    )
+
     order_menu = fields.Boolean(string='Enable Order Menu')
 
     use_anglo_saxon_accounting = fields.Boolean(string="Use Anglo-Saxon accounting", readonly=False,
