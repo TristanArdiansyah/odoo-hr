@@ -20,16 +20,16 @@
 #
 #############################################################################
 
-from odoo import models, fields, api
-
+from odoo import models, fields
 
 class ResConfigSettings(models.TransientModel):
     _inherit = 'res.config.settings'
 
-    order_menu = fields.Boolean(string='Enable Order Menu')
+    module_hr_employee_shift = fields.Boolean(
+        string='Enable Employee Shift Module',
+        help='Enable or disable the employee shift functionality'
+    )
 
-    use_anglo_saxon_accounting = fields.Boolean(string="Use Anglo-Saxon accounting", readonly=False,
-                                                related='company_id.anglo_saxon_accounting')
 
     @api.model
     def get_values(self):
