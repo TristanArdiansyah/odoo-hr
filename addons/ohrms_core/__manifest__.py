@@ -65,7 +65,6 @@
         'hr_company_policy',
         'website_customer_note',
         'website_sale_auto_backend',
-        'ent_hr_reminder',
         'fl_birthday_wish',
         'ent_history_employee'
 
