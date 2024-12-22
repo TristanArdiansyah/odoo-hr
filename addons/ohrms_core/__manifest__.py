@@ -58,13 +58,13 @@
         'hr_organizational_chart',
         'base_account_budget',
         'base_accounting_kit',
-        'attendance_view_calendar',
-        'bsi_employee_badges_and_rewards',
-        'ent_hr_employee_updation',
-        'ent_hr_reward_warning',
-        'hr_company_policy',
-        'website_customer_note',
-        'website_sale_auto_backend'
+        # 'attendance_view_calendar',
+        # 'bsi_employee_badges_and_rewards',
+        # 'ent_hr_employee_updation',
+        # 'ent_hr_reward_warning',
+        # 'hr_company_policy',
+        # 'website_customer_note',
+        # 'website_sale_auto_backend'
 
     ],
     "external_dependencies": {"python": ["pandas"]},
